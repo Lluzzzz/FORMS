@@ -1,0 +1,221 @@
+.google-button,
+.apple-button {
+    background-color: #ffffff;
+    color: #888888;
+    border: 1px solid gray;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto; /* Ajustar el margen */
+    appearance: none;
+    background-image: none;
+}
+
+/* Estilos al pasar el ratón */
+.google-button:hover,
+.apple-button:hover {
+    background-color: #f2f2f2;
+}
+
+/* Estilos específicos para el botón de Apple */
+.apple-button {
+    background-color: #ffffff;
+    color: #888888;
+}
+
+/* Estilos al pasar el ratón para el botón de Apple */
+.apple-button:hover {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para ocultar el radio de entrada */
+input[type="radio"] {
+    display: none;
+}
+
+/* Colocar la regla * al final para sobrescribir estilos anteriores */
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.form-container {
+    margin: 20px auto;
+    padding: 0 20px;
+    max-width: 900px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type=text],
+input[type=password],
+input[type=radio] {
+    border-radius: 0px;
+    border: 1px solid #ccc;
+    width: 50%;
+    padding: 12px;
+    margin: 10px auto; /* Ajustar el margen */
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    color:white;
+    background-color: rgb(112, 158, 158);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Arizona Text', cursive;
+}
+
+label {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input[type=textarea] {
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    height: 100px;
+    margin: 10px auto; /* Ajustar el margen */
+}
+
+img {
+    width: 20px;
+    height: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+section form {
+    width: 70%;
+}
+
+section input[type=text],
+section input[type=password],
+section input[type=radio] {
+    width: 60%;
+}
+
+section input[type=submit] {
+    width: 40%;
+    margin-top: 30px;
+}
+
+section label {
+    text-align: left;
+    margin-bottom: 5px;
+    display: block;
+}
+
+section input[type=textarea] {
+    width: 100%;
+    height: 100px;
+    margin: 10px auto; /* Ajustar el margen */
+}
+
+.google-image::placeholder {
+    background-image: url('https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png');
+    background-size: contain;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+}
+
+.apple-image::placeholder {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1200px-Apple_logo_black.svg.png');
+    background-size: contain;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+}
+
+.separator-line {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    margin: 10px auto; /* Ajustar el margen */
+}
+
+.i {
+    width: 80%;
+    height: 80%;
+}
+
+.final {
+    color:#888888;
+    font-size: small;
+
+}
+
+.robot-label {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #888888;
+    border: 1px solid gray;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px auto; /* Ajustar el margen */
+}
+
+.robot-radio {
+    display: none;
+}
+
+.robot-radio + .robot-text {
+    margin-left: 10px; /* Ajustar el espacio entre el radio y el texto */
+}
+
+.robot-text {
+    display: flex;
+    align-items: center;
+}
+
+.robot-image {
+    width: 20px; /* Reducir el tamaño de la imagen */
+    height: 20px; /* Ajustar el tamaño de la imagen */
+}
+
+.robot-label:hover {
+    background-color: #f2f2f2;
+}

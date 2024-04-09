@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+    <link href="https://s-f.scribdassets.com/stylesheets/fonts/source_serif_pro/source_serif_pro.css" rel="stylesheet">
+    <link href='https://s-f.scribdassets.com/stylesheets/fonts/arizona_text/arizona_text.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="form-container">
+        <section>
+            <form action="#" onsubmit="return validateForm()">
+                <header>
+                    <img src="https://w7.pngwing.com/pngs/817/318/png-transparent-logo-scribd-logos-and-brands-icon.png"
+                        alt="Scribd Logo">
+                    <h1>CREA TU CUENTA</h1>
+                </header>
+                <label for="subscription">Una suscripción para Scribd, Everland y Slideshare</label><br>
+                <input type="radio" name="provider" id="google" class="google-image" />
+                <label for="google" class="google-button"><img
+                        src="https://pbs.twimg.com/profile_images/1311763847775125516/mvBRhlDs_400x400.jpg"> Continuar
+                    con Google</label><br>
+                <input type="radio" name="provider" id="apple" class="apple-image" />
+                <label for="apple" class="apple-button"><img
+                        src="https://help.apple.com/assets/65B00C5D01AF096E12042585/65B00C60AD707D9BFA0A315D/es_419/cfef5ce601689564e0a39b4773f20815.png">
+                    Continuar con Apple</label><br>
+
+                <label class="separator-line"></label>
+
+                <label>o</label>
+                <br>
+                <input type="text" size="20" maxlength="20" placeholder="Correo electrónico"
+                    class="input-with-background" /><br>
+                <input type="text" size="20" maxlength="20" placeholder="Contraseña"
+                    class="input-with-background" /><br>
+                    <label class="robot-label" for="robot-no">
+                        <input type="radio" id="robot-no" name="robot" value="no" class="robot-radio">
+                        <span class="robot-text">No soy un robot <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/RecaptchaLogo.svg/800px-RecaptchaLogo.svg.png" class="robot-image"></span>
+                    </label>
+
+                <input type="submit" value="Registrarse"><br>
+                <label>¿Ya tienes una cuenta o suscripción a Scribd? Utilice su nombre de usuario y contraseña de
+                    Scribd. </label><a href="#">Inicie sesión</a><br>
+                <label class="final">Al continuar, aceptas los Términos del servicio y la Política de privacidad de
+                    Scribd.</label><br>
+
+                <p class="final">UNA SUSCRIPCIÓN PARA:</p>
+                <img class="i" src="Captura de pantalla 2024-04-08 201331.png">
+
+            </form>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Manejar clic en el botón de Continuar con Google
+            document.querySelector('.google-button').addEventListener('click', function () {
+                // Aquí puedes colocar la lógica para continuar con Google
+                console.log('Continuar con Google');
+            });
+
+            // Manejar clic en el botón de Continuar con Apple
+            document.querySelector('.apple-button').addEventListener('click', function () {
+                // Aquí puedes colocar la lógica para continuar con Apple
+                console.log('Continuar con Apple');
+            });
+        });
+
+        function validateForm() {
+            // Aquí puedes agregar la lógica de validación del formulario si es necesario
+            return true;
+        }
+    </script>
+</body>
+
+</html>
